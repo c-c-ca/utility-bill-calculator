@@ -18,8 +18,8 @@ def get_days_in_month(year: int, month: int) -> int:
     if month < 12:
         next_month_start = date(year, month + 1, 1)
     else:
-        next_month_start = date(year + 1, month, 1)
-    return (next_month_start - curr_month_start).days - 1
+        next_month_start = date(year + 1, 1, 1)
+    return (next_month_start - curr_month_start).days
 
 
 def get_month_start_for_bill(bill: Bill, month: int) -> date:
